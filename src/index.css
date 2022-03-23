@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@layer base {
+  th {
+    @apply p-[30px] last:p-0 max-w-[350px] text-left text-primary text-base font-normal;
+  }
+
+	footer li {
+		@apply flex mb-2 last:mb-0 text-primary text-base text-left
+	}
+}
+
+@layer components {
+	.nav_link {
+		@apply mr-12 leading-7 text-primary;
+	}
+	.input {
+		@apply border-2 border-solid border-purple-900 rounded py-3 px-2 h-10 w-64
+	}
+	.link {
+		@apply text-secondary text-xl leading-8 font-roboto
+	}
+	.list_item {
+		@apply flex mb-4 last:mb-6
+	}
+
+	.check_icon {
+		@apply mr-5 max-w-[20px] max-h-[20px]
+	}
+
+	.table_item {
+		@apply mb-8
+	}
+}
