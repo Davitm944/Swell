@@ -19,7 +19,7 @@ code {
 
 @layer components {
 	.nav_link {
-		@apply mr-12 leading-7 text-primary;
+		@apply mr-12 leading-7 text-primary cursor-pointer;
 	}
 	.input {
 		@apply border-2 border-solid border-purple-900 rounded py-3 px-2 h-10 w-64

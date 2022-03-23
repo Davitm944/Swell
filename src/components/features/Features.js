@@ -4,8 +4,8 @@ import icon from 'components/icons/check.png';
 
 function Features() {
 	return (
-		<div class='mx-20'>
-			<h1 class='text-[56px] max-w-[695px] mb-14'>More of what you need, out of the box</h1>
+		<div class='md:mx-20 sm:mx-16' id='features'>
+			<h1 class='md:leading-[50px]  md:text-[56px] md:max-w-[695px] md:mb-14 sm:text-4xl sm:mb-6 sm:leading-5'>More of what you need, out of the box</h1>
 			<div>
 				<div class='absolute z-10'>
 					<ul>

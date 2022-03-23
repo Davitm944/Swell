@@ -11,9 +11,10 @@ import Footer from 'components/footer/Footer';
 
 function App() {
 	return (
-		<div class='bg-background'>
+		<div class='bg-gradient-to-b from-background to-white '>
 			<Header />
 			<Intro />
+			<div id='whySwell'>
 			<Card
 				img={card1}
 				title='Made for growth'
@@ -30,6 +31,7 @@ function App() {
 				layout='flex flex-row-reverse justify-evenly md: flex-wrap'
 				img_layout='w-full h-auto mix-blend-darken relative bottom-8'
 			/>
+			</div>
 			<Features/>
 			<Compare/>
 			<Merchants/>
@@ -38,7 +40,5 @@ function App() {
 	);
 }
 
-
-//bg-gradient-to-b from-background to-white 
 
 export default App;
