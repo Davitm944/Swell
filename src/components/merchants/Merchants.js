@@ -10,7 +10,7 @@ import MerchantCard from 'components/cards/MerchantCard';
 function Merchants() {
 	return (
     <div>
-      <h1 class='text-center text-primary text-[56px] mt-[126px] mb-[81px]'>Merchants on the move</h1>
+      <h1 class='text-center text-primary md:text-[56px] mt-[126px] mb-[81px] sm:text-2xl'>Merchants on the move</h1>
 		<div class=' md:mx-[76px] flex justify-center'>
 			<MerchantCard
 				layout='flex flex-col bg-card1 w-1/3'

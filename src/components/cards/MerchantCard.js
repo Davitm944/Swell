@@ -10,7 +10,7 @@ function MerchantCard(props) {
 				<div class='pl-7'>
 					<img src={props.icon} alt='logo' />
 				</div>
-				<p class='md:py-7 md:text-xl md:leading-8 md:text-center sm:text-base sm:py-5'>{props.text}</p>
+				<p class='md:py-7 md:text-xl md:leading-8 md:text-center sm:text-base sm:p-5'>{props.text}</p>
 				<span class='text-base'>{props.author}</span>
 			</div>
 		</div>

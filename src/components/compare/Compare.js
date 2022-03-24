@@ -8,10 +8,10 @@ import icon4 from 'components/icons/icon4.png'
 
 function Compare() {
 	return (
-		<div class='bg-gradient-to-b from-purple-300 to-white rounded mx-[76px] pt-[55px]' id='compare'>
-			<h1 class='text-4xl max-w-[555px] text-center mt-[55px] mb-[70px] mx-auto font-semibold'>How does Swell compare to other enterprise platforms?</h1>
+		<div class='bg-gradient-to-b from-purple-300 to-white rounded md:mx-[76px] md:pt-[55px]' id='compare'>
+			<h1 class='md:text-4xl max-w-[555px] text-center mt-[55px] mb-[70px] mx-auto font-semibold sm:text-2xl'>How does Swell compare to other enterprise platforms?</h1>
 
-      <div class='mx-auto my-0 '>
+      <div class='mx-auto my-0 overflow-scroll '>
           <table class='my-0 mx-auto'>
             <tr>
               <th class='p-2'></th>

@@ -7,7 +7,7 @@ import icon4 from 'components/icons/Vector (13).png';
 function Footer() {
 	return (
 		<footer class='mt-24 max-w-7xl'>
-			<div class='flex justify-around  mb-44'>
+			<div class='flex justify-around  sm:mb-44 mb-4'>
 				<div>
 					<img src={icon1} alt='icon' />
 				</div>
@@ -19,7 +19,7 @@ function Footer() {
 				</div>
 			</div>
 
-			<div class='flex justify-evenly'>
+			<div class='flex sm:justify-evenly flex-wrap sm:p-0 px-5'>
 				<ul>
 					<li>
 						<img src={icon4} alt='icon' class='mb-5' />
