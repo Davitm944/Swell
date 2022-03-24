@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import logo from 'components/icons/Vector (14).png';
 import Link from 'react-scroll/modules/components/Link';
-import { useWindowWidth } from '@react-hook/window-size';
 
 function Header() {
 	const [ navStyle, setNavStyle ] = useState('');
@@ -11,7 +10,9 @@ function Header() {
 	const onMobile = () => {
 		if (ddStyle === 'hidden absolute') {
 			setddStyle('block absolute');
-			setNavStyle('xs:flex xs:flex-col xs:relative xs:top-[55px] xs:right-11 xs:shadow-xl xs:py-6 xs:bg-gray-100 xs:rounded');
+			setNavStyle(
+				'xs:flex xs:flex-col xs:relative xs:top-[55px] xs:right-11 xs:shadow-xl xs:py-6 xs:bg-gray-100 xs:rounded'
+			);
 			SetIconStyle('rotate-90 duration-500');
 		} else {
 			setddStyle('hidden absolute');
@@ -30,8 +31,9 @@ function Header() {
 					→
 				</span>
 
-				<div class={`sm:flex sm:relative xs:${ddStyle} `}>
-					<nav class={`sm:font-roboto sm:pt-5 sm:block sm:static sm:top-0 sm:left-0 sm:shadow-none sm:bg-transparent ${navStyle}`}>
+				<div class={`sm:flex sm:relative xs:${ddStyle}`}>
+					<nav
+						class={`sm:font-roboto sm:pt-5 sm:block sm:static sm:top-0 sm:left-0 sm:shadow-none sm:bg-transparent ${navStyle}`}>
 						<Link to='whySwell' smooth={true} duration={1000} class='nav_link'>
 							Why Swell?
 						</Link>

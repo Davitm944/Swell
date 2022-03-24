@@ -103,7 +103,7 @@ function Footer() {
 			<div class='flex justify-around mt-20'>
 				<a href='/' class='sm:text-base text-sm '>© 2021. Swell. Made worldwide.</a>
 				<a href='/' class='sm:text-base text-sm sm:px-0 px-3'>Privacy Policy  Terms of Service</a>
-				<a href='/' class='sm:text-base text-sm '>All Systems Operational</a>
+				<a href='/' class='sm:text-base sm:flex hidden text-sm  '>All Systems Operational</a>
 			</div>
 		</footer>
 	);
