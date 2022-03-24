@@ -5,16 +5,16 @@ import { useWindowWidth } from '@react-hook/window-size';
 
 function Header() {
 	const [ navStyle, setNavStyle ] = useState('');
-	const [ ddStyle, setddStyle ] = useState('hidden');
+	const [ ddStyle, setddStyle ] = useState('hidden absolute');
 	const [ iconStyle, SetIconStyle ] = useState('');
 
 	const onMobile = () => {
-		if (ddStyle === 'hidden') {
+		if (ddStyle === 'hidden absolute') {
 			setddStyle('block absolute');
-			setNavStyle('flex flex-col relative top-[55px] right-11 shadow-xl py-6 bg-gray-100 rounded');
+			setNavStyle('xs:flex xs:flex-col xs:relative xs:top-[55px] xs:right-11 xs:shadow-xl xs:py-6 xs:bg-gray-100 xs:rounded');
 			SetIconStyle('rotate-90 duration-500');
 		} else {
-			setddStyle('hidden');
+			setddStyle('hidden absolute');
 			setNavStyle('');
 			SetIconStyle('duration-500');
 		}
@@ -30,8 +30,8 @@ function Header() {
 					→
 				</span>
 
-				<div class={`sm:block ${ddStyle} `}>
-					<nav class={`sm:font-roboto sm:pt-5 sm:block sm:static sm:top-0 sm:left-0 ${navStyle}`}>
+				<div class={`sm:flex sm:relative xs:${ddStyle} `}>
+					<nav class={`sm:font-roboto sm:pt-5 sm:block sm:static sm:top-0 sm:left-0 sm:shadow-none sm:bg-transparent ${navStyle}`}>
 						<Link to='whySwell' smooth={true} duration={1000} class='nav_link'>
 							Why Swell?
 						</Link>

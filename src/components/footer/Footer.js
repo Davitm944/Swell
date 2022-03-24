@@ -7,7 +7,7 @@ import icon4 from 'components/icons/Vector (13).png';
 function Footer() {
 	return (
 		<footer class='mt-24 max-w-7xl'>
-			<div class='flex justify-around  sm:mb-44 mb-4'>
+			<div class='flex justify-around  sm:mb-44 mb-4 items-center'>
 				<div>
 					<img src={icon1} alt='icon' />
 				</div>
@@ -19,7 +19,7 @@ function Footer() {
 				</div>
 			</div>
 
-			<div class='flex sm:justify-evenly flex-wrap sm:p-0 px-5'>
+			<div class='sm:flex sm:justify-evenly flex-wrap sm:p-0 px-5 hidden'>
 				<ul>
 					<li>
 						<img src={icon4} alt='icon' class='mb-5' />
@@ -101,9 +101,9 @@ function Footer() {
 				</ul>
 			</div>
 			<div class='flex justify-around mt-20'>
-				<a href='/'>© 2021. Swell. Made worldwide.</a>
-				<a href='/'>Privacy Policy  Terms of Service</a>
-				<a href='/'>All Systems Operational</a>
+				<a href='/' class='sm:text-base text-sm '>© 2021. Swell. Made worldwide.</a>
+				<a href='/' class='sm:text-base text-sm sm:px-0 px-3'>Privacy Policy  Terms of Service</a>
+				<a href='/' class='sm:text-base text-sm '>All Systems Operational</a>
 			</div>
 		</footer>
 	);

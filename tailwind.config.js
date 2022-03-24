@@ -1,7 +1,7 @@
 module.exports = {
 	content : [ './src/**/*.{html,js}' ],
 	theme   : {
-		extend : {
+		extend  : {
 			colors     : {
 				primary    : '#180330',
 				secondary  : '#550088',
@@ -13,6 +13,13 @@ module.exports = {
 			fontFamily : {
 				roboto : "'Roboto', sans-serif"
 			}
+		},
+		screens : {
+			xs : '123px',
+			sm : '640px',
+			md : '768px',
+			lg : '1024px',
+			xl : '1280px'
 		}
 	},
 	plugins : []
