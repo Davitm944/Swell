@@ -3,20 +3,20 @@ import logo from 'components/icons/Vector (14).png';
 import Link from 'react-scroll/modules/components/Link';
 
 function Header() {
-	const [ navStyle, setNavStyle ] = useState('');
-	const [ ddStyle, setddStyle ] = useState('hidden absolute');
+	const [ navStyle, setNavStyle ] = useState('xs:opacity-0');
+	const [ ddStyle, setddStyle ] = useState('flex absolute invisible');
 	const [ iconStyle, SetIconStyle ] = useState('');
 
 	const onMobile = () => {
-		if (ddStyle === 'hidden absolute') {
-			setddStyle('block absolute');
+		if (ddStyle === 'flex absolute invisible') {
+			setddStyle('block absolute visible');
 			setNavStyle(
-				'xs:flex xs:flex-col xs:relative xs:top-[55px] xs:right-11 xs:shadow-xl xs:py-6 xs:bg-gray-100 xs:rounded'
+				'xs:flex xs:flex-col xs:relative xs:top-[55px] xs:right-11 xs:shadow-xl xs:py-6 xs:bg-gray-200 xs:rounded xs:opacity-100' 
 			);
 			SetIconStyle('rotate-90 duration-500');
 		} else {
-			setddStyle('hidden absolute');
-			setNavStyle('');
+			setddStyle('flex absolute invisible');
+			setNavStyle('xs:opacity-0');
 			SetIconStyle('duration-500');
 		}
 	};
@@ -31,9 +31,9 @@ function Header() {
 					→
 				</span>
 
-				<div class={`sm:flex sm:relative xs:${ddStyle}`}>
+				<div class={`sm:flex sm:relative sm:visible xs:${ddStyle}`}>
 					<nav
-						class={`sm:font-roboto sm:pt-5 sm:block sm:static sm:top-0 sm:left-0 sm:shadow-none sm:bg-transparent ${navStyle}`}>
+						class={`sm:font-roboto sm:pt-5 sm:block sm:static sm:top-0 sm:left-0 sm:shadow-none sm:bg-transparent transition ease-linear duration-500  sm:opacity-100 ${navStyle}`}>
 						<Link to='whySwell' smooth={true} duration={1000} class='nav_link'>
 							Why Swell?
 						</Link>
